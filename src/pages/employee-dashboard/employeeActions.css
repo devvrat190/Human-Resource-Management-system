@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+/* ================= PAGE ================= */
+
+.action-page {
+  max-width: 520px;
+  margin: 60px auto;
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  font-family: "Inter", system-ui, -apple-system;
+}
+
+.action-page * {
+  box-sizing: border-box;
+}
+
+/* ================= TITLE ================= */
+
+.action-page h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 24px;
+  letter-spacing: -0.3px;
+}
+
+/* ================= INPUTS ================= */
+
+.action-page input,
+.action-page select,
+.action-page textarea {
+  width: 100%;
+  height: 48px;
+  padding: 0 14px;
+  margin-bottom: 16px;
+  border-radius: 12px;
+  border: 1px solid #d1d5db;
+  font-size: 14.5px;
+  background: #f9fafb;
+  transition: 0.2s ease;
+  font-family: "Inter", system-ui, -apple-system;
+}
+
+.action-page textarea {
+  min-height: 100px;
+  padding: 12px 14px;
+  resize: vertical;
+}
+
+/* Focus */
+.action-page input:focus,
+.action-page select:focus,
+.action-page textarea:focus {
+  border-color: #2563eb;
+  background: white;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(37,99,235,0.12);
+}
+
+/* ================= BUTTON ================= */
+
+.action-page button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s ease;
+  margin-top: 8px;
+}
+
+.action-page button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(37,99,235,0.35);
+}
+
+.action-page button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}

@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+/* ================= PAGE ================= */
+
+.attendance-form * {
+  box-sizing: border-box;
+}
+
+.attendance-page {
+  padding: 32px;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont;
+  background: #f9fafb;
+  min-height: 100vh;
+}
+
+/* ================= HEADER ================= */
+.attendance-table th {
+  text-align: left;
+}
+
+
+.attendance-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.attendance-header h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111827;
+  letter-spacing: -0.3px;
+}
+
+.attendance-header button {
+  background: #2563eb;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.attendance-header button:hover {
+  background: #1e40af;
+}
+
+/* ================= TABLE ================= */
+
+.attendance-table {
+  width: 100%;
+  margin-top: 10px;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+}
+
+.attendance-table th,
+.attendance-table td {
+  padding: 16px 18px;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 14.5px;
+  color: #374151;
+}
+
+.attendance-table th {
+  background: #f8fafc;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #6b7280;
+}
+
+.attendance-table tbody tr:hover {
+  background: #f9fafb;
+}
+
+/* ================= STATUS ================= */
+
+.status.present {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.status.absent {
+  color: #c00909;
+  font-weight: 600;
+}
+
+.status.late {
+  color: #ca8a04;
+  font-weight: 600;
+}
+
+/* ================= FORM ================= */
+
+.attendance-form {
+  max-width: 420px;
+  padding: 40px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  margin: auto;
+}
+
+.attendance-form h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+.attendance-form input,
+.attendance-form select {
+  width: 100%;
+  height: 48px;
+  padding: 0 14px;
+  margin-bottom: 16px;
+  border-radius: 12px;
+  border: 1px solid #d1d5db;
+  font-size: 14.5px;
+  background: #f9fafb;
+  transition: 0.2s ease;
+  display: block;
+}
+
+
+.attendance-form input:focus,
+.attendance-form select:focus {
+  border-color: #2563eb;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(37,99,235,0.1);
+}
+
+/* ================= BUTTON ================= */
+
+.attendance-form button {
+  width: 100%;
+  padding: 14px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.attendance-form button:hover {
+  background: #1e40af;
+}
+
+/* ================= ACTION BUTTONS (MATCH EMPLOYEE) ================= */
+
+.actions button {
+  margin-right: 8px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.actions button:hover {
+  opacity: 0.9;
+}
+
+/* Normal buttons (View / Edit) */
+.actions button:not(.danger) {
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+/* Delete */
+.actions .danger {
+  background: #c00909;
+  color: #f9f2f2;
+}
+
+/* ================= EMPTY STATE ================= */
+
+.empty {
+  text-align: center;
+  padding: 24px;
+  color: #6b7280;
+  font-size: 14.5px;
+}
+
+/* ================= MODERN ATTENDANCE FORM (MATCH EMPLOYEE) ================= */
+
+.attendance-form {
+  font-family: "Inter", system-ui, -apple-system;
+  max-width: 520px;
+  margin: 40px auto;
+}
+
+/* Title */
+.attendance-form h1,
+.attendance-form h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 24px;
+}
+
+/* Inputs & selects */
+.attendance-form input,
+.attendance-form select {
+  font-family: "Inter", system-ui, -apple-system;
+  font-size: 14.5px;
+}
+
+/* Submit button */
+.attendance-form button {
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  border-radius: 12px;
+}
+
+.attendance-form button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.35);
+}

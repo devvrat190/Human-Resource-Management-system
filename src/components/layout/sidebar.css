@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+/* ================== SIDEBAR CONTAINER ================== */
+
+.sidebar {
+  width: 240px;
+  background-color: #ffffff;
+  border-right: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont;
+}
+
+/* ================== HEADER ================== */
+
+.sidebar-header h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #2563eb;
+  letter-spacing: -0.3px;
+}
+
+.sidebar-header span {
+  font-size: 13px;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+/* ================== MENU ================== */
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+  flex: 1;
+}
+
+/* Link Style */
+.sidebar-link {
+  display: block;
+  padding: 14px 16px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #1f2937;
+  text-decoration: none;
+  margin-bottom: 8px;
+  transition: all 0.2s ease;
+  letter-spacing: -0.2px;
+}
+
+/* Hover */
+.sidebar-link:hover {
+  background-color: #f8fafc;
+  color: #2563eb;
+}
+
+/* Active */
+.sidebar-link.active {
+  background-color: #eff6ff;
+  color: #2563eb;
+  font-weight: 600;
+  box-shadow: inset 4px 0 0 #2563eb;
+}
+
+/* ================== FOOTER ================== */
+
+.sidebar-footer {
+  margin-top: auto;
+}
+
+/* ================== LOGOUT ================== */
+
+.logout-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background-color: #dc2626;
+  color: #f8f3f3;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.logout-btn:hover {
+  background-color: #8e0202;
+}
+
+/* =========================================================
+   EMPLOYEE SIDEBAR (extends Admin sidebar styles)
+========================================================= */
+
+/* Change header color for employee panel */
+.sidebar-header span {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+/* When Employee Panel is active */
+.sidebar:has(.sidebar-header span:contains("Employee")) .sidebar-header h2 {
+  color: #1e40af;
+}
+
+/* Employee active link */
+.sidebar:has(.sidebar-header span:contains("Employee")) .sidebar-link.active {
+  background-color: #e0ecff;
+  color: #1e40af;
+  box-shadow: inset 4px 0 0 #1e40af;
+}
+
+/* Employee hover */
+.sidebar:has(.sidebar-header span:contains("Employee")) .sidebar-link:hover {
+  background-color: #eef4ff;
+  color: #1e40af;
+}
+
+/* Employee Logout Button */
+.sidebar:has(.sidebar-header span:contains("Employee")) .logout-btn {
+  background-color: #1e40af;
+}
+
+.sidebar:has(.sidebar-header span:contains("Employee")) .logout-btn:hover {
+  background-color: #172554;
+}

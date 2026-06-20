@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+/* ================= PAGE ================= */
+
+.payroll-page {
+  padding: 32px;
+  font-family: "Inter", system-ui, -apple-system;
+  background: #f9fafb;
+  min-height: 100vh;
+}
+
+/* ================= HEADER ================= */
+
+.payroll-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.payroll-header h1,
+.payroll-header h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111827;
+  letter-spacing: -0.3px;
+}
+
+.payroll-header button {
+  background: #2563eb;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.payroll-header button:hover {
+  background: #1e40af;
+}
+
+/* ================= TABLE ================= */
+
+.payroll-table {
+  width: 100%;
+  margin-top: 10px;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+}
+
+.payroll-table th,
+.payroll-table td {
+  padding: 16px 18px;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 14.5px;
+  color: #374151;
+  text-align: left;
+}
+
+.payroll-table th {
+  background: #f8fafc;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #6b7280;
+}
+
+.payroll-table tbody tr:hover {
+  background: #f9fafb;
+}
+
+/* ================= STATUS ================= */
+
+.status.generated {
+  color: #ca8a04;
+  font-weight: 600;
+}
+
+.status.paid {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+/* ================= ACTION BUTTONS ================= */
+
+.actions button {
+  margin-right: 8px;
+  padding: 8px 14px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+/* View Payslip (Blue) */
+.actions .view {
+  background: #2563eb;
+  color: white;
+}
+
+.actions .view:hover {
+  background: #1e40af;
+}
+
+/* Approve / Mark Paid */
+.actions .approve {
+  background: #ecfdf5;
+  color: #16a34a;
+}
+
+.actions .approve:hover {
+  background: #d1fae5;
+}
+
+/* Delete */
+.actions .danger {
+  background: #c00909;
+  color: #f9f2f2;
+}
+
+.actions .danger:hover {
+  background: #a10707;
+}
+
+/* ================= FORM ================= */
+
+.payroll-form {
+  max-width: 520px;
+  padding: 40px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  margin: 40px auto;
+  font-family: "Inter", system-ui, -apple-system;
+}
+
+.payroll-form h1,
+.payroll-form h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #111827;
+}
+
+.payroll-form * {
+  box-sizing: border-box;
+}
+
+.payroll-form input,
+.payroll-form select {
+  width: 100%;
+  height: 48px;
+  padding: 0 14px;
+  margin-bottom: 16px;
+  border-radius: 12px;
+  border: 1px solid #d1d5db;
+  font-size: 14.5px;
+  background: #f9fafb;
+  transition: 0.2s ease;
+  font-family: "Inter", system-ui, -apple-system;
+}
+
+.payroll-form input:focus,
+.payroll-form select:focus {
+  border-color: #2563eb;
+  background: white;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(37,99,235,0.12);
+}
+
+/* Submit */
+.payroll-form button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.payroll-form button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(37,99,235,0.35);
+}
+
+/* ================= EMPTY ================= */
+
+.empty {
+  text-align: center;
+  padding: 24px;
+  color: #6b7280;
+  font-size: 14.5px;
+}
+/* ================= PILL STYLE ================= */
+
+/* View Payslip (Blue pill) */
+.actions .view {
+  background: #2563eb;
+  color: #ffffff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.actions .view:hover {
+  background: #1e40af;
+}
+
+/* Finalize / Mark Paid (Green pill) */
+.actions .finalize,
+.actions .approve {
+  background: #16a34a;
+  color: #ffffff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.actions .finalize:hover,
+.actions .approve:hover {
+  background: #15803d;
+}
+
+/* ===== FIX PAYSLIP VIEW BUTTON ===== */
+
+.payroll-table td.actions {
+  padding: 16px 18px;
+}
+
+.payroll-table td.actions button {
+  all: unset;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Blue View button */
+.payroll-table td.actions .view {
+  background-color: #2563eb;
+  color: white;
+}
+
+.payroll-table td.actions .view:hover {
+  background-color: #1e40af;
+}
+
+/* ===== FINALIZE BUTTON (MATCH VIEW PAYSLIPS) ===== */
+
+.payroll-table .actions .finalize {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #16a34a;
+  color: #ffffff;
+  padding: 8px 14px;
+  border-radius: 10px;
+  border: none;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.payroll-table .actions .finalize:hover {
+  background: #15803d;
+}
+
+/* Space between View & Finalize buttons */
+
+.payroll-table .actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
